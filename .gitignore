@@ -1,0 +1,7 @@
+.idea
+*.pack
+4ba39bb9aa2957830b8290aa1aeb562d02a02cac
+.angular
+node_modules
+target
+/frontend/package-lock.json

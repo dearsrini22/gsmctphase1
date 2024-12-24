@@ -1,0 +1,51 @@
+<div class="container-xl">
+  <div class="table-responsive">
+    <div class="table-wrapper">
+      <div class="table-title">
+        <div class="row">
+          <div class="col-sm-6">
+            <h4><b>Manage Associations</b></h4>
+          </div>
+          <div class="col-sm-6">
+            <button class="btn btn-success" (click)="addAssociation()">
+              <i class='bi bi-plus-circle'></i><span>Add Association</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <table class="table table-striped table-hover table-bordered table-content">
+        <thead>
+        <tr class="center-align">
+          <th>Name</th>
+          <th>State</th>
+          <th>Phone</th>
+          <th>Email</th>
+          <th>Zip Code</th>
+          <th>Actions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let association of associationList">
+          <td>{{ association.name }}</td>
+          <td>{{ association.state }}</td>
+          <td>{{ association.phone }}</td>
+          <td>{{ association.email }}</td>
+          <td>{{ association.zipCode }}</td>
+          <td class="center-align">
+            <a href="#" [routerLink]="['/list-home-owners/', association.id]" class="btn btn-sm"><i
+              class='bi bi bi-list-ul list'></i></a>
+            <a href="#" [routerLink]="['/view-association/', association.id]" class="btn btn-sm"><i
+              class='bi bi-eye-fill view'></i></a>
+            <a href="#" [routerLink]="['/edit-association/', association.id]" class="btn btn-sm"><i
+              class="bi bi-pencil-square edit"></i></a>
+            <button type="button" (click)="deleteAssociation(association)" class="btn btn-sm"><i class='bi bi-trash-fill delete'></i></button>
+          </td>
+        </tr>
+        <tr>
+          <td *ngIf="associationList.length == 0" colspan="6">No Association Found</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

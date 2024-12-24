@@ -1,0 +1,10 @@
+{
+  "/auth": {
+    "target": "http://localhost:8090/auth",
+    "secure": false
+  },
+  "/api": {
+    "target": "http://localhost:8090/api",
+    "secure": false
+  }
+}

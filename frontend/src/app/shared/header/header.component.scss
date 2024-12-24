@@ -1,0 +1,41 @@
+.header {
+  overflow: hidden;
+  position: sticky;
+  top: 0;
+  background-color: var(--white);
+  z-index: 1000;
+  padding: 0 20px;
+}
+
+.nav-link {
+  color: var(--black);
+  margin: 0 15px;
+  font-weight: 600;
+}
+
+.active-link {
+  font-weight: 800;
+  color: var(--secondary-font-color);
+}
+
+.login-btn, .new-user-btn, .logout-btn {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border: 1px solid var(--secondary-font-color);
+  font-size: .75rem;
+  line-height: 12px;
+  min-width: 84px;
+  border-radius: 25px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.login-btn {
+  color: var(--secondary-font-color);
+}
+
+.new-user-btn, .logout-btn {
+  background-color: var(--secondary-font-color);
+  color: var(--white);
+  font-weight: 700 !important;
+}

@@ -1,0 +1,19 @@
+.banner {
+  background-image: url('../../../assets/images/association.jpg');
+  height: 100%;
+  margin: 0 30px;
+  background-size: cover;
+}
+
+.content {
+  top: 20%;
+  left: 15%;
+  position: absolute;
+  text-align: center;
+}
+
+.content h1 {
+  color: var(--secondary-font-color);
+  letter-spacing: 0.05em;
+  font: 600 40px GsmctRegular, Helvetica Neue, Arial, sans-serif;
+}
